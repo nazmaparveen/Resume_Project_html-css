@@ -1,0 +1,400 @@
+/* General reset for padding, margins, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the navigation bar */
+.navbar {
+    background-color: #02303A; /* Dark background color */
+    padding: 25px 0; /* Padding on top and bottom */
+    font-family: 'Poppins', sans-serif; /* Use a clean font */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styling the unordered list */
+.navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center the navigation items */
+}
+
+/* Styling each list item */
+.navbar ul li {
+    margin: 0 20px; /* Spacing between menu items */
+}
+
+/* Styling the anchor links */
+.navbar ul li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text for contrast */
+    font-size: 18px; /* Comfortable font size */
+    padding: 10px 15px; /* Padding for clickable area */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for the links */
+.navbar ul li a:hover {
+    background-color: #00D1B2; /* Background color change on hover */
+    color: #02303A; /* Text color change on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items */
+    }
+
+    .navbar ul li {
+        margin: 10px 0; /* Vertical spacing between items */
+    }
+}
+
+/* Styling the header container */
+.header {
+    background-color: #02303A; /* Dark background color */
+    padding: 60px 0; /* Space around the content */
+    color: white; /* White text for contrast */
+    font-family: 'Poppins', sans-serif; /* Clean and modern font */
+}
+
+/* Header container to hold the text and image side by side */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Align content vertically */
+    max-width: 1200px; /* Container width */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Padding for some spacing */
+}
+
+/* Text content styles */
+.header-text {
+    max-width: 600px; /* Limit the width of text content */
+}
+
+/* Heading 1 (h1) styles */
+.header-text h1 {
+    font-size: 48px; /* Large font size for emphasis */
+    line-height: 1.2; /* Line height for better readability */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Highlighted name styling */
+.header-text h1 span {
+    color: #00D1B2; /* Different color for the name to stand out */
+}
+
+/* Paragraph for the job title */
+.header-text p {
+    font-size: 24px; /* Slightly smaller font size */
+    margin-bottom: 30px; /* Space between job title and buttons */
+    font-weight: 300; /* Lighter font for a clean look */
+}
+
+/* Button group */
+.button-group {
+    display: flex;
+    gap: 20px; /* Space between the buttons */
+}
+
+/* General button styling */
+.btn {
+    padding: 10px 25px; /* Padding for comfortable clickable area */
+    font-size: 18px; /* Button text size */
+    color: white; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 30px; /* Rounded buttons */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hire Me button */
+.hire-me {
+    background-color: #00D1B2; /* Primary color for the 'Hire Me' button */
+}
+
+/* My Works button */
+.my-works {
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #00D1B2; /* Border for 'My Works' button */
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+    background-color: white; /* White background on hover */
+    color: #02303A; /* Dark text on hover */
+}
+
+/* Right side: Image styling */
+.header-image img {
+    border-radius: 50%; /* Circular image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 300px; /* Max width for the image */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        text-align: center; /* Center the text */
+    }
+
+    .header-text h1 {
+        font-size: 36px; /* Smaller heading for mobile */
+    }
+
+    .header-image img {
+        max-width: 200px; /* Adjust image size for mobile */
+        margin-top: 30px; /* Add space between text and image */
+    }
+}
+
+/* About Section Styles */
+.about {
+    padding: 20px; /* Add padding for spacing */
+}
+
+.container {
+    max-width: 1100px;
+    font-size:30px ; /* Limit the maximum width of the container */
+    margin: 5px; /* Center the container */
+    padding:10px; /* Add horizontal padding */
+}
+
+.about-content {
+    font-size: 20px;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    gap: 80px; /* Space between image and details */
+}
+
+.profile-image {
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.profile-image img {
+    height: 300px; /* Set height */
+    margin: 5px; /* Center the container */
+    padding:5px;
+    width: 280px; /* Set width for a circular shape */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Maintain aspect ratio and fill the circle */
+    border: 2px solid #24fae5; /* Optional: Add a border around the image */
+}
+
+.about-details {
+    color: #333; /* Dark text color for contrast */
+  
+}
+
+.about-details p {
+    margin: 5px 0; /* Add margin between paragraphs */
+    line-height: 2.5; /* Increase line height for readability */
+   
+}
+
+.btn.download-cv {
+    display: inline-block; /* Make the button inline */
+    padding: 10px 20px; /* Add padding for the button */
+    background-color: aquamarine; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners for the button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn.download-cv:hover {
+    background-color: #14b0c8; /* Darker shade on hover */
+}
+
+/* Logo Image Styles */
+.logo-image {
+    flex-shrink: 0; /* Prevent shrinking */
+    text-align: right; /* Align the logo to the right */
+}
+
+.logo {
+    height: 250px; /* Set logo height */
+    width: 200; /* Maintain aspect ratio */
+}
+
+.btn.download-cv:active {
+    background-color: #1e7e34; /* Even darker green when active/clicked */
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Stack image and details vertically */
+        align-items: center; /* Center the items */
+    }
+
+    .profile-image img {
+        width: 150px; /* Smaller image on mobile */
+    }
+
+    .about-details {
+        text-align: center; /* Center the text on smaller screens */
+    }
+}
+
+/* Skills Section */
+.skills {
+    padding: 80px;
+    background-color: #f0f0f0; /* Light background color */
+    font-family: 'Poppins', sans-serif;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #02303A; /* Dark color */
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+/* Grid layout for the skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns grid */
+    gap: 20px; /* Space between grid items */
+    max-width: 1200px;
+    margin: 0 auto; /* Center grid content */
+}
+
+.skill {
+    background-color: white; /* Background for each skill */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    font-size: 18px;
+    text-align: left;
+}
+
+.skill:hover {
+    transform: translateY(-5px); /* Elevates on hover */
+}
+
+.skill span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #02303A; /* Dark text color */
+    font-weight: bold;
+}
+
+/* Progress bar container */
+.progress {
+    background-color: #e0e0e0; /* Light gray background */
+    border-radius: 20px;
+    height: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Progress bar filling */
+.progress-bar {
+    background-color: #00D1B2; /* Green for filled portion */
+    height: 100%;
+    border-radius: 20px 0 0 20px; /* Rounded corners */
+    transition: width 0.5s ease-in-out; /* Smooth width transition */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr 1fr; /* 2 columns on tablets */
+    }
+}
+
+@media (max-width: 676px) {
+    .skills-grid {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+}
+
+/* Footer Section */
+.footer {
+    background-color: #02303A; /* Dark background color */
+    color: white;
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #00D1B2; /* Light green text */
+}
+
+.footer p, .footer li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #00D1B2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #fff; /* Change link color on hover */
+}
+
+/* Footer Layout */
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensure responsiveness */
+    margin-bottom: 30px;
+}
+
+.footer-col {
+    flex-basis: 23%; /* Each column takes up roughly 23% */
+    margin-bottom: 20px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+}
+
+/* Social Media Icons */
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links a img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a img:hover {
+    transform: scale(1.1); /* Slight enlargement on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-col {
+        flex-basis: 48%; /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 766px) {
+    .footer-col {
+        flex-basis: 100%; /* Full width on small screens */
+    }
+}
+
